@@ -30,6 +30,11 @@ body {
   color: #000000;
 }
 
+.navigation-list-item-link.studio,
+.navigation-list-item-link.portfolio {
+  color: var(--accent-color);
+}
+
 /* Контакты */
 .navigation-list-item-link {
   font-weight: 500;
@@ -54,7 +59,9 @@ body {
 }
 
 .communication-list-item-link:hover,
-.communication-list-item-link:focus {
+.communication-list-item-link:focus,
+.contacts-list-item-link:hover,
+.contacts-list-item-link:focus {
   color: var(--accent-color);
 }
 
@@ -164,7 +171,7 @@ body {
 
 /* Подвал */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--footer-bg-color);
 }
 
 .footer-logo-link {
@@ -198,4 +205,45 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+/* Портфолио */
+.filter-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--main-text-color);
+  background-color: #f5f4fa;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-text-color);
+}
+
+.project-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.project-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background: rgba(33, 150, 243, 0.9);
 }
